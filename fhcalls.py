@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import requests
 import urllib3
 from urllib.parse import urlparse
