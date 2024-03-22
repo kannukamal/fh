@@ -1,9 +1,9 @@
 import requests
-import urllib3
+# import urllib3
 from urllib.parse import urlparse
 
 # Disable SSL warnings
-urllib3.disable_warnings()
+# urllib3.disable_warnings()
 
 # Define the functions
 def get_api_response(api_url):
@@ -68,6 +68,7 @@ def generate_url(url_m):
         print("-------------------------------------------------------------------------")
 print("Python file execution started")
 generate_url("https://www.adidas.com.sg/women-shoes-new_arrivals")
+print(generate_url("https://www.adidas.com.sg/women-shoes-new_arrivals"))
 
 
 print("Hello World")
