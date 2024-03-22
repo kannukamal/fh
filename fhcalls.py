@@ -67,6 +67,6 @@ import requests
 
 
 print("Hello World")
-api_url = https://www.adidas.com.sg/women-shoes-new_arrivals
+api_url = "https://www.adidas.com.sg/women-shoes-new_arrivals"
 response=requests.get(api_url, verify=False)
 print("The response is :",response)
