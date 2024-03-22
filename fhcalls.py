@@ -66,7 +66,7 @@ def generate_url(url_m):
         fh_preview_url_wm_prod = fh_preview_url_wm_stg.replace(".prepublished", ".published")
         print("Fredhopper Business Manager Link without Modifications for PROD : ", fh_preview_url_wm_prod)
         print("-------------------------------------------------------------------------")
-
+print("Python file execution started")
 generate_url("https://www.adidas.com.sg/women-shoes-new_arrivals")
 
 
