@@ -1,9 +1,9 @@
-import requests
-import urllib3
-from urllib.parse import urlparse
+# import requests
+# import urllib3
+# from urllib.parse import urlparse
 
-# Disable SSL warnings
-urllib3.disable_warnings()
+# # Disable SSL warnings
+# urllib3.disable_warnings()
 
 # Define the functions
 def get_api_response(api_url):
