@@ -31,21 +31,21 @@ def generate_url(url_m):
         print("str1 : ", str1)
         fh_url_to_be_changed = get_api_response(str1)
         print("fh_url_to_be_changed : ", fh_url_to_be_changed)
-        print("-------------------------------STAGING OUTPUT------------------------------------")
-        fh_preview_url_stg = fh_url_to_be_changed.replace("fredhopper/query", "preview")
-        print("Fredhopper Business Manager Link with all Modifications for STG : ", fh_preview_url_stg)
+#         print("-------------------------------STAGING OUTPUT------------------------------------")
+#         fh_preview_url_stg = fh_url_to_be_changed.replace("fredhopper/query", "preview")
+#         print("Fredhopper Business Manager Link with all Modifications for STG : ", fh_preview_url_stg)
 
-        fh_preview_url_wm_stg = fh_preview_url_stg + "&fh_suppress=modifications:all"
-        print("Fredhopper Business Manager Link without Modifications for STG : ", fh_preview_url_wm_stg)
+#         fh_preview_url_wm_stg = fh_preview_url_stg + "&fh_suppress=modifications:all"
+#         print("Fredhopper Business Manager Link without Modifications for STG : ", fh_preview_url_wm_stg)
 
-        print("-------------------------------PRODUCTION OUTPUT------------------------------------------")
+#         print("-------------------------------PRODUCTION OUTPUT------------------------------------------")
 
-        fh_preview_url_prod = fh_preview_url_stg.replace(".prepublished", ".published")
-        print("Fredhopper Business Manager Link with all Modifications for PROD : ", fh_preview_url_prod)
+#         fh_preview_url_prod = fh_preview_url_stg.replace(".prepublished", ".published")
+#         print("Fredhopper Business Manager Link with all Modifications for PROD : ", fh_preview_url_prod)
 
-        fh_preview_url_wm_prod = fh_preview_url_wm_stg.replace(".prepublished", ".published")
-        print("Fredhopper Business Manager Link without Modifications for PROD : ", fh_preview_url_wm_prod)
-        print("-------------------------------------------------------------------------")
+#         fh_preview_url_wm_prod = fh_preview_url_wm_stg.replace(".prepublished", ".published")
+#         print("Fredhopper Business Manager Link without Modifications for PROD : ", fh_preview_url_wm_prod)
+#         print("-------------------------------------------------------------------------")
 def get_api_response(api_url):
     try:
         response = requests.get(api_url, verify=False)
