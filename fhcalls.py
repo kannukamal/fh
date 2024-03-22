@@ -1,5 +1,5 @@
 from urllib.parse import urlparse
-import requests
+import Requests
 
 def generate_url(url_m):
     print("PLP URL entered :", url_m)
